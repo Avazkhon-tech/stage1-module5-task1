@@ -60,7 +60,7 @@ public class InterfaceCreatorTest {
                         new ArrayList<>(Arrays. asList("his is a good way to learn Java Functional Interfaces.",
                                                        "Hello world Java.",
                                                        "MJC is a great school")),
-                        new ArrayList<>(Arrays. asList("Hello world Java.")))
+                        new ArrayList<>(Arrays. asList()))
         );
     }
 

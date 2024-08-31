@@ -41,7 +41,8 @@ public class InterfaceCreator {
         };
     }
 
-    public Supplier<List<String>> filterCollection(List<String> values) {
+    public Supplier<List<String>> filterCollection(List<String> values)
+    {
 
        return () -> {
            List<String> filteredValues = new ArrayList<>();
@@ -49,7 +50,7 @@ public class InterfaceCreator {
 
                char c = x.charAt(0);
                String[] split = x.split(" ");
-               if (split.length > 2 && Character.isUpperCase(c) && x.endsWith(".")) {
+               if (split.length > 3 && Character.isUpperCase(c) && x.endsWith(".")) {
                    filteredValues.add(x);
                }
            });
