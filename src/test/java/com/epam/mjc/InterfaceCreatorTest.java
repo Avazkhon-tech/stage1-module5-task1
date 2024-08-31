@@ -60,7 +60,7 @@ public class InterfaceCreatorTest {
                         new ArrayList<>(Arrays. asList("his is a good way to learn Java Functional Interfaces.",
                                                        "Hello world Java.",
                                                        "MJC is a great school")),
-                        new ArrayList<>(Arrays. asList()))
+                        new ArrayList<>(Arrays. asList("Hello world Java.")))
         );
     }
 
@@ -110,7 +110,8 @@ public class InterfaceCreatorTest {
     void isValuesStartWithUpperCaseTest(String name,
                                             List<String> sourceList,
                                             boolean expected) {
-        boolean actualResult = new InterfaceCreator().isValuesStartWithUpperCase().test(sourceList);
+        boolean actualResult = new InterfaceCreator().
+                isValuesStartWithUpperCase().test(sourceList);
         assertEquals(expected, actualResult);
     }
 
@@ -119,7 +120,10 @@ public class InterfaceCreatorTest {
     void addEvenValuesAtTheEndTest(String name,
                                     List<Integer> sourceList,
                                     List<Integer> expected) {
-        new InterfaceCreator().addEvenValuesAtTheEnd().accept(sourceList);
+        new InterfaceCreator().
+
+
+                addEvenValuesAtTheEnd().accept(sourceList);
         assertEquals(sourceList, expected);
     }
 
@@ -128,7 +132,11 @@ public class InterfaceCreatorTest {
     void filterCollectionTest(String name,
                                List<String> sourceList,
                                List<String> expected) {
-        List<String> result = new InterfaceCreator().filterCollection(sourceList).get();
+        List<String> result = new InterfaceCreator().
+
+
+
+                filterCollection(sourceList).get();
         assertEquals(result, expected);
     }
 
@@ -137,7 +145,9 @@ public class InterfaceCreatorTest {
     void concatListTest(String name,
                         List<String> sourceList,
                         Map<String, Integer> expected) {
-        Map<String, Integer> result = new InterfaceCreator().stringSize().apply(sourceList);
+        Map<String, Integer> result = new InterfaceCreator().
+
+                stringSize().apply(sourceList);
         assertEquals(result, expected);
     }
 
@@ -147,7 +157,8 @@ public class InterfaceCreatorTest {
                           List<Integer> sourceList1,
                           List<Integer> sourceList2,
                           List<Integer> expected) {
-        List<Integer> result = new InterfaceCreator().concatList().apply(sourceList1, sourceList2);
+        List<Integer> result = new InterfaceCreator().
+                concatList().apply(sourceList1, sourceList2);
         assertEquals(result, expected);
     }
 }
